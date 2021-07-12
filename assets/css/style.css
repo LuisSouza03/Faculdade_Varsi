@@ -1,0 +1,286 @@
+/*=============== Google Fonts ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,600;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+/*=============== Colors ===============*/
+:root {
+    /* Dark Mode */
+    --main-color: #121212;
+    --square-color: #383838;
+    --sub-color: #979797;
+    --title-color: #D8D8D8;
+    --subtitle-color: #E5E5E5;
+    --subtitle-color2: #B3B2B2;
+    --alternative-color: #E0FBFC;
+    --button-color: #BB86FC;
+    --campus-color: #013EA4;
+    --font-color-white: #FFFFFF;
+}
+
+img {
+    max-width: 900px;
+}
+
+/*=============== Reset ===============*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.button {
+    color: var(--font-color-white);
+    font-size: 1.125rem;
+    background: none;
+    border: 1px solid var(--button-color);
+    border-radius: 8px;
+    padding: 14px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    line-height: 28px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.button:hover {
+    background-color: var(--button-color);
+
+}
+/*=============== Header ===============*/
+
+.initial-page {
+    height: 840px;
+    background-image: url(../img/campus/campus.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-varsi {
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-varsi img {
+    width: 205px;
+    height: 46px;
+    margin-left: 70px;
+}
+
+.header-varsi a {
+    color: var(--font-color-white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.header-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-right: 70px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+
+.initial-page li a {
+    text-decoration: none;
+    padding: 20px;
+}
+
+header {
+    height: 100px;
+}
+
+/*=============== Introdução ===============*/
+
+.intro-varsi {
+    height: 665px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.intro-varsi h1 {
+    font-family: 'Raleway', sans-serif;
+    color: var(--font-color-white);
+    font-weight: 900;
+    font-size: 4.5rem;
+}
+
+.intro-varsi span {
+    display: block;
+    text-align: center;
+}
+
+.intro-varsi h3 {
+    margin-top: 72px;
+    color: var(--font-color-white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+}
+
+.intro-varsi button {
+    margin-top: 72px;
+}
+
+
+
+.bv-varsi {
+    background-color: var(--main-color);
+}
+
+.bv-varsi h1 {
+    padding: 70px;
+    color: var(--title-color);
+    font-size: 3rem;
+    line-height: 56px;
+    font-weight: 700;
+}
+
+.content-sobre-varsi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-varsi {
+    width: 476px;
+    height: 475px;
+    margin-right: 65px;
+    margin-left: 70px;
+    background-color: var(--sub-color);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.16)), #121212;
+}
+
+.sobre-varsi h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 29px;
+    color: var(--subtitle-color);
+    margin-top: 45px;
+    margin-left: 30px;
+}
+
+.sobre-varsi p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 29px;
+    color: var(--subtitle-color);
+    margin-top: 45px;
+    margin-left: 30px;
+}
+
+.sobre-varsi button {
+    margin-left: 30px;
+    margin-top: 36px;
+}
+
+.sobre-varsi .foto-varsi {
+    width: 748px;
+    height: 475px;
+}
+
+.info-varsi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    color: var(--title-color);
+}
+
+.matri-varsi {
+    padding: 50px;
+}
+
+.matri-varsi h2 {
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: top;
+}
+
+.prof-varsi {
+    padding: 50px;
+}
+
+.aprov-varsi {
+    padding: 50px;
+}
+
+.satis-varsi {
+    padding: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.campus-varsi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+    border-radius: 15px;
+}
+
+.campus {
+    padding: 45px;
+}
+.campus-varsi .paulista {
+    background-image: url(../img/campus/campus_paulista.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 399px;
+    height: 784px;
+    padding: 45px;
+}
+.campus-varsi .mooca {
+    background-image: url(../img/campus/campus_mooca.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 399px;
+    height: 784px;
+    padding: 45px;
+}
+.campus-varsi .alphaville {
+    background-image: url(../img/campus/campus_alphaville.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 399px;
+    height: 784px;
+}
