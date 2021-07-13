@@ -7,7 +7,9 @@
     /* Dark Mode */
     --main-color: #121212;
     --square-color: #383838;
+    --square2-color: #383838;
     --sub-color: #979797;
+    --sub2-color: #8B8E94;
     --title-color: #D8D8D8;
     --subtitle-color: #E5E5E5;
     --subtitle-color2: #B3B2B2;
@@ -15,6 +17,8 @@
     --button-color: #BB86FC;
     --campus-color: #013EA4;
     --font-color-white: #FFFFFF;
+    --font-color-button: #FFFFFF;
+    --font-color-button-dark: #000;
 }
 
 img {
@@ -29,8 +33,12 @@ img {
     font-family: 'Raleway', sans-serif;
 }
 
+body {
+    background-color: var(--main-color);
+}
+
 .button {
-    color: var(--font-color-white);
+    color: var(--font-color-button);
     font-size: 1.125rem;
     background: none;
     border: 1px solid var(--button-color);
@@ -47,8 +55,38 @@ img {
 
 .button:hover {
     background-color: var(--button-color);
-
 }
+
+/*=============== Light Mode ===============*/
+ #icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+ }
+
+ .dark-theme {
+    --main-color: #ffff;
+    --square-color: #383838;
+    --square2-color: #fff;
+    --sub-color: #020202;
+    --sub2-color: #8B8E94;
+    --title-color: #000;
+    --subtitle-color: #908A89;
+    --subtitle-color2: #B3B2B2;
+    --alternative-color: #E0FBFC;
+    --button-color: #BB86FC;
+    --campus-color: #013EA4;
+    --font-color-white: #FFFFFF;
+    --font-color-button: #000;
+ }
+
+ 
+
+
+
+
+
 /*=============== Header ===============*/
 
 .initial-page {
@@ -134,13 +172,10 @@ header {
 
 .intro-varsi button {
     margin-top: 72px;
+    color: white;
 }
 
-
-
-.bv-varsi {
-    background-color: var(--main-color);
-}
+/*=============== Sessão Bem-Vindo ===============*/
 
 .bv-varsi h1 {
     padding: 70px;
@@ -153,6 +188,7 @@ header {
 .content-sobre-varsi {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -162,7 +198,8 @@ header {
     margin-right: 65px;
     margin-left: 70px;
     background-color: var(--sub-color);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.16)), #121212;
+    background: var(--square2-color);
+    box-shadow: 7px 7px 19px 5px rgba(0, 0, 0, 0.5);
 }
 
 .sobre-varsi h2 {
@@ -186,6 +223,7 @@ header {
 }
 
 .sobre-varsi button {
+    color: var(--font-color-button);
     margin-left: 30px;
     margin-top: 36px;
 }
@@ -199,55 +237,209 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
-    color: var(--title-color);
-}
-
-.matri-varsi {
-    padding: 50px;
-}
-
-.matri-varsi h2 {
-    display: flex;
     flex-wrap: wrap;
-    vertical-align: top;
+    margin-top: 100px;
+    color: var(--title-color);
+    padding: 20px;
 }
 
-.prof-varsi {
-    padding: 50px;
+.matri-varsi, .prof-varsi, .aprov-varsi, .sati-varsi {
+    padding: 60px;
+    margin-left: 100px;
 }
 
-.aprov-varsi {
-    padding: 50px;
+/*=============== Sessão Cursos ===============*/
+
+
+.cursos-varsi-section h1 {
+    text-align: center;
+    flex-wrap: wrap;
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 56px;
+    margin-bottom: 50px;
 }
 
-.satis-varsi {
-    padding: 50px;
+.crusos-varsi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
+.medicina-varsi,
+.direito-varsi,
+.arquiteto-varsi {
+    width: 403px;
+    height: 690px;
+    background-color: var(--square-color);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-right: 50px;
+}
 
+.medicina-varsi-foto img {
+    max-width: 403px;
+    height: 269px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px 15px 0 0;
+}
 
+.direito-varsi-foto img {
+    max-width: 403px;
+    max-height: 300px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px 15px 0 0;
+}
 
+.arquiteto-varsi-foto img {
+    max-width: 403px;
+    max-height: 300px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px 15px 0 0;
+}
 
+.medicina-varsi h2,
+.direito-varsi h2,
+.arquiteto-varsi h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 105px;
+    text-align: center;
+    color: var(--alternative-color);
+}
 
+.medicina-varsi p,
+.direito-varsi p,
+.arquiteto-varsi p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 30px;
+    text-align: center;
+    color: var(--subtitle-color2);
+    margin-top: 25px;
+}
 
+.button {
+    margin-top: 29px;
+    color: white;
+}
 
+.cursos-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
 
+.button-cursos {
+    color: var(--font-color-button);
+    font-size: 1.125rem;
+    background: none;
+    border: 1px solid var(--button-color);
+    border-radius: 8px;
+    padding: 14px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    line-height: 28px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
 
+.button-cursos:hover {
+    background-color: var(--button-color);
+}
 
+/*=============== Sessão Professores ===============*/
+.profe-varsi img{
+    max-width: 90px;
+}
 
+.profe-varsi h1 {
+    text-align: center;
+    flex-wrap: wrap;
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 56px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
 
+.profe-varsi .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    line-height: 17px;
+    text-align: center;
+    color: var(--subtitle-color2);
+}
 
+.profs-varsi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 56px;
+}
 
+/* Geral */
 
+.profs-varsi-all {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 278px;
+    height: 297px;
+    margin-left: 56px;
+    background-color: var(--square-color);
+    border-radius: 5px;
+}
 
+.profs-image {
+    margin-top: 20px;
+}
 
+.profs-varsi-all h2 {
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 35px;
+    color: var(--title-color);
+    margin-top: 20px;
+}
 
+.profs-varsi-all p {
+    font-size: 0.875rem;
+    line-height: 16px;
+    color: var(--sub2-color);
+    margin-top: 20px;
+}
 
+.profs-varsi-all .redes-sociais {
+    margin-top: 20px;
+}
 
+/*=============== Sessão Campus ===============*/
 
-
-
+.campus-section h1 {
+    text-align: center;
+    flex-wrap: wrap;
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 56px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
 
 .campus-varsi {
     display: flex;
@@ -261,14 +453,18 @@ header {
 .campus {
     padding: 45px;
 }
+
 .campus-varsi .paulista {
+    display: flex;
     background-image: url(../img/campus/campus_paulista.jpg);
     background-position: center;
     background-size: cover;
     width: 399px;
     height: 784px;
     padding: 45px;
+    color: white;
 }
+
 .campus-varsi .mooca {
     background-image: url(../img/campus/campus_mooca.jpg);
     background-position: center;
@@ -276,11 +472,104 @@ header {
     width: 399px;
     height: 784px;
     padding: 45px;
+    color: white;
 }
+
 .campus-varsi .alphaville {
     background-image: url(../img/campus/campus_alphaville.jpg);
     background-position: center;
     background-size: cover;
     width: 399px;
     height: 784px;
+    color: white;
+}
+
+.campus-varsi .paulista h2,
+.campus-varsi .mooca h2,
+.campus-varsi .alphaville h2 {
+    display: none;
+    transition: 0.5s;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 56px;
+    text-align: center;
+}
+
+.campus-varsi .paulista p,
+.campus-varsi .mooca p,
+.campus-varsi .alphaville p {
+    display: none;
+    transition: 0.5s;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.campus-varsi .paulista:hover h2,
+.campus-varsi .mooca:hover h2,
+.campus-varsi .alphaville:hover h2 {
+    display: block;
+}
+
+.campus-varsi .paulista:hover p,
+.campus-varsi .mooca:hover p,
+.campus-varsi .alphaville:hover p {
+    display: block;
+}
+
+/*=============== Sessão Opnião ===============*/
+
+.opniao-varsi h1 {
+    text-align: center;
+    flex-wrap: wrap;
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 56px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.opniao-varsi .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    line-height: 17px;
+    text-align: center;
+    color: var(--subtitle-color2);
+}
+
+.comment-varsi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.opniao-content {
+    width: 779px;
+    height: 260px;
+    margin-top: 60px;
+    background-color: var(--square-color);
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.comment-varsi .foto img {
+    width: 90px;
+}
+
+.opniao-content p {
+    font-size: 1.125rem;
+    line-height: 21px;
+    color: var(--title-color);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.opniao-content cite {
+    font-size: 0.875rem;
+    line-height: 16px;
+    color: var(--title-color);
 }
